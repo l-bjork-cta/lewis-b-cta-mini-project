@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <ul id="Nav">
+        <li><a href="index.html">To Do</a></li>
+        <li><a href="notes.html">Notes</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li id="dark" class="theme-btn">Toggle Theme</li>
+    </ul>
+
+    <!-- Title -->
+    <h2 id="TdTitle">To Do List:</h2>
+
+    <!-- Textbox div -->
+    <div>
+        <input type="text" id="item" name="item" placeholder="Enter an Item:">
+        <button id="btnAdd">Add</button>
+    </div>
+    
+    <p id="error" style="display: none; color: red;">Please Enter a Value</p>
+
+    <!-- Active items -->
+    <div>
+        <ul id="itemList"></ul>
+    </div>
+
+    <!-- Counters -->
+    <div>
+        <p id="toDoNo">To Do: 0</p>
+        <p id="totComNo">Completed: 0</p>
+    </div>
+
+    <!-- Completed items list -->
+    <div>
+        <h3>Completed Items:</h3>
+        <ul id="totComLi"></ul>
+    </div>
+    <button id="clrComLiBtn">Clear Completed List</button>
+
+    <script src="./main.js"></script>
+</body>
+</html>

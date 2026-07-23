@@ -1,0 +1,44 @@
+/* Base styles(LightMode) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #ffffff;
+    color: #222222;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode theme */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+/* Navbar */
+#Nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+#Nav li {
+    float: left;
+}
+
+#Nav li a, #Nav #dark {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#Nav li a:hover, #Nav #dark:hover {
+    background-color: #111111;
+}
+
+#Nav #dark {
+    float: right;
+}
